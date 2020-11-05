@@ -12,7 +12,7 @@ let package = Package(
         .watchOS(.v2)
     ],
     products: [
-        .library(name: "SwiftyBeaver", targets: ["SwiftyBeaver"])
+        .library(name: "SwiftyBeaver", type: .dynamic, targets: ["SwiftyBeaver"])
     ],
     targets: [
         .target(name: "SwiftyBeaver", path: "Sources"),
